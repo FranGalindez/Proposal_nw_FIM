@@ -2,8 +2,8 @@
 //Important variables
 //----------------------------------------------------------
 
-d := 80 // cylinder of diameter
-diameter := 80e-9
+d := 360 // cylinder of diameter
+diameter := 360e-9
 l := 200 // cylinder height
 ACo := 31e-12
 MCo := 1440e3

@@ -2,8 +2,8 @@
 //Important variables
 //----------------------------------------------------------
 
-d := 80 // cylinder of diameter
-diameter := 80e-9
+d := 160 // cylinder of diameter
+diameter := 160e-9
 l := 200 // cylinder height
 ACo := 31e-12
 MCo := 1440e3
@@ -44,9 +44,9 @@ save(regions)
 //Parameters region 1
 //----------------------------------------------------------
   
-Msat.setregion(1, MCo) //material parameters of Co (Hard)
-Aex.setregion(1, ACo)
-Ku1.setregion(1, K1Co)
+Msat.setregion(1, MNi) //material parameters of Co (Hard)
+Aex.setregion(1, ANi)
+Ku1.setregion(1, K1Ni)
 anisU.setregion(1, vector(0,0,1))
 
      
@@ -54,18 +54,18 @@ anisU.setregion(1, vector(0,0,1))
 //Parameters region 2
 //----------------------------------------------------------
 
-Msat.setregion(2, MNi) //material parameters of Py (Soft)
-Aex.setregion(2, ANi)
-Ku1.setregion(2, K1Ni)
+Msat.setregion(2, MCo) //material parameters of Py (Soft)
+Aex.setregion(2, ACo)
+Ku1.setregion(2, K1Co)
 anisU.setregion(2, vector(0,0,1))
 
 //----------------------------------------------------------
 //Parameters region 3
 //----------------------------------------------------------
 
-Msat.setregion(3, MCo)    //material parameters of Co (Hard)
-Aex.setregion(3, ACo)
-Ku1.setregion(3, K1Co)
+Msat.setregion(3, MNi)    //material parameters of Co (Hard)
+Aex.setregion(3, ANi)
+Ku1.setregion(3, K1Ni)
 anisU.setregion(3, vector(0,0,1))
 
 //----------------------------------------------------------

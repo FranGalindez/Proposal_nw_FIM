@@ -2,8 +2,8 @@
 //Important variables
 //----------------------------------------------------------
 
-d := 80 // cylinder of diameter
-diameter := 80e-9
+d := 200 // cylinder of diameter
+diameter := 200e-9
 l := 200 // cylinder height
 ACo := 31e-12
 MCo := 1440e3
@@ -72,8 +72,8 @@ anisU.setregion(3, vector(0,0,1))
 //initial magnetization states
 //----------------------------------------------------------
 
-m = Vortex(1,-1)
-saveas(m, "vortex")
+m = Uniform(1,0.1,0)
+saveas(m, "Ferro_X")
 
 TableAdd(m_full)
 TableAdd(B_ext)

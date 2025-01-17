@@ -2,8 +2,8 @@
 //Important variables
 //----------------------------------------------------------
 
-d := 80 // cylinder of diameter
-diameter := 80e-9
+d := 240 // cylinder of diameter
+diameter := 240e-9
 l := 200 // cylinder height
 ACo := 31e-12
 MCo := 1440e3
@@ -39,7 +39,6 @@ defregion(1, zrange(-(length/2), -(second_long/2)))  // first cylinder
 defregion(2, zrange(-(second_long/2),second_long/2))   // second cylinder  
 defregion(3, zrange(second_long/2, length/2))   // third cylinder   
 save(regions)
-
 //----------------------------------------------------------
 //Parameters region 1
 //----------------------------------------------------------
@@ -72,8 +71,8 @@ anisU.setregion(3, vector(0,0,1))
 //initial magnetization states
 //----------------------------------------------------------
 
-m = Vortex(1,-1)
-saveas(m, "vortex")
+m = Uniform(0,0.1,1)
+saveas(m, "Ferro_Z")
 
 TableAdd(m_full)
 TableAdd(B_ext)
